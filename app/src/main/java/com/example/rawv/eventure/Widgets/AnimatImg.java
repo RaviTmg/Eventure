@@ -1,4 +1,4 @@
-package com.example.rawv.eventure;
+package com.example.rawv.eventure.Widgets;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -11,11 +11,14 @@ import android.view.ViewPropertyAnimator;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
+import com.example.rawv.eventure.R;
+
 import java.util.Random;
 
 /**
  * Created by RawV on 5/26/2016.
- */public class AnimatImg extends FrameLayout {
+ */
+public class AnimatImg extends FrameLayout {
 
     private static final String TAG = "AnimatImg";
 
@@ -35,7 +38,7 @@ import java.util.Random;
         @Override
         public void run() {
             swapImage();
-            mHandler.postDelayed(mSwapImageRunnable, mSwapMs - mFadeInOutMs*2);
+            mHandler.postDelayed(mSwapImageRunnable, mSwapMs - mFadeInOutMs * 2);
         }
     };
 
@@ -59,7 +62,7 @@ import java.util.Random;
 
     private void swapImage() {
         Log.d(TAG, "swapImage active=" + mActiveImageIndex);
-        if(mActiveImageIndex == -1) {
+        if (mActiveImageIndex == -1) {
             mActiveImageIndex = 1;
             animate(mImageViews[mActiveImageIndex]);
             return;

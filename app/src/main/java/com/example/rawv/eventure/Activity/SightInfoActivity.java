@@ -10,19 +10,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ScrollView;
 import android.widget.Toast;
 
-import com.example.rawv.eventure.AnimatImg;
-import com.example.rawv.eventure.Fragments.MainObject;
+import com.example.rawv.eventure.Widgets.AnimatImg;
 import com.example.rawv.eventure.R;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 public class SightInfoActivity extends AppCompatActivity {
 
