@@ -45,7 +45,7 @@ public class AdvenRecyclerAdapter extends RecyclerView.Adapter<AdvenRecyclerAdap
     @Override
     public void onBindViewHolder(final Holder holder, final int position) {
         holder.imageView1.setImageResource(mainObjectList.get(position).img);
-        holder.textView.setText(mainObjectList.get(position).name);
+        holder.mname.setText(mainObjectList.get(position).name);
         holder.imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,6 +70,7 @@ public class AdvenRecyclerAdapter extends RecyclerView.Adapter<AdvenRecyclerAdap
                 holder.imageView2.startAnimation(bookmarkAnimation);
             }
         });
+        holder.mrating.setText(mainObjectList.get(position).star);
     }
 
 
@@ -81,14 +82,15 @@ public class AdvenRecyclerAdapter extends RecyclerView.Adapter<AdvenRecyclerAdap
     public class Holder extends RecyclerView.ViewHolder {
         CardView cardView;
         ImageView imageView1, imageView2;
-        TextView textView;
+        TextView mname, mrating;
 
         public Holder(View itemView) {
             super(itemView);
             cardView = (CardView) itemView.findViewById(R.id.cv_sight);
             imageView1 = (ImageView) itemView.findViewById(R.id.img_sight);
             imageView2 = (ImageView) itemView.findViewById(R.id.bookmark);
-            textView = (TextView) itemView.findViewById(R.id.txt_name);
+            mname = (TextView) itemView.findViewById(R.id.txt_name);
+            mrating = (TextView) itemView.findViewById(R.id.rating);
         }
     }
 }

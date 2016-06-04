@@ -32,7 +32,7 @@
             android:textColor="@android:color/white" />
 
         <TextView
-            android:id="@+id/rating_sight"
+            android:id="@+id/rating"
             android:layout_width="36dp"
             android:layout_height="36dp"
             android:background="@drawable/rounded_corner"
@@ -41,7 +41,7 @@
             android:layout_margin="8dp"
             android:gravity="center"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@android:color/black" />
+            android:textColor="@color/textColorPrimary" />
 
         <ImageView
             android:id="@+id/bookmark"
