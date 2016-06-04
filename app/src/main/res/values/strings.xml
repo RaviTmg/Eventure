@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Eventure</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="fewa">Phewa lake, the second largest lake in the kingdom, roughly measuring 1.5 km by 4 km, is the center of all attractions in Pokhara. The enchanting lake is an idyllic playground. Brightly painted wooden boats and sailboats can be rented on reasonable cost around lakeside. </string>
+
+    <string name="title_activity_sight_info">SightInfo Activity</string>
+    <string name="action_search">search</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="comm3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum cursus libero nisi, vel porta lectus mollis in. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</string>
+    <string name="comm2">Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean quis vestibulum neque. Ut non ullamcorper tortor.</string>
+    <string name="comm1">Quisque euismod massa vel orci tincidunt, ut pulvinar massa maximus. Sed commodo lacus quis nulla bibendum dictum sed et lectus.</string>
+</resources>

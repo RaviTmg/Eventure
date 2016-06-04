@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="1dp"
+    android:layout_height="100dp"
+    android:id="@+id/card_tip"
+    android:background="@android:color/white"
+    android:padding="@dimen/activity_vertical_margin">
+
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="By Ravi Tamang"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/black" />
+    <me.grantland.widget.AutofitTextView
+
+        android:id="@+id/tip_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        autofit:minTextSize="16sp"
+        android:text="Its a 45 mins walk from Lakeside if you take the boat"
+        />
+
+    <TextView
+        android:id="@+id/date_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="4 days ago" />
+</RelativeLayout>
