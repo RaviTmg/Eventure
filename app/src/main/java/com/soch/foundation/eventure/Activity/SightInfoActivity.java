@@ -1,4 +1,4 @@
-package com.example.rawv.eventure.Activity;
+package com.soch.foundation.eventure.Activity;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -10,10 +10,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.rawv.eventure.Widgets.AnimatImg;
-import com.example.rawv.eventure.R;
+import com.soch.foundation.eventure.Widgets.AnimatImg;
+import com.soch.foundation.eventure.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -74,6 +75,14 @@ public class SightInfoActivity extends AppCompatActivity {
         LinearLayoutManager grd = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(grd);
         recyclerView.setAdapter(new CommentAdapter(getObjectList(), getApplicationContext()));
+
+        final ImageView mbookmark = (ImageView) findViewById(R.id.ic_bookmark);
+        mbookmark.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mbookmark.setImageResource(R.drawable.bookmark_fill);
+            }
+        });
 
     }
 

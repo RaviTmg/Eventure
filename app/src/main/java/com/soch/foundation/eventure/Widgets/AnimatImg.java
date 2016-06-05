@@ -1,4 +1,4 @@
-package com.example.rawv.eventure.Widgets;
+package com.soch.foundation.eventure.Widgets;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -11,7 +11,7 @@ import android.view.ViewPropertyAnimator;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import com.example.rawv.eventure.R;
+import com.soch.foundation.eventure.R;
 
 import java.util.Random;
 

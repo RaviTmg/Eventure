@@ -1,4 +1,4 @@
-package com.example.rawv.eventure.Fragments;
+package com.soch.foundation.eventure.Fragments;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,8 +12,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.rawv.eventure.Activity.SightInfoActivity;
-import com.example.rawv.eventure.R;
+import com.soch.foundation.eventure.Activity.SightInfoActivity;
+import com.soch.foundation.eventure.R;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.rawv.eventure.Activity;
+package com.soch.foundation.eventure.Activity;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.rawv.eventure.R;
+import com.soch.foundation.eventure.R;
 
 import java.util.List;
 

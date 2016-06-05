@@ -1,4 +1,4 @@
-package com.example.rawv.eventure.Fragments;
+package com.soch.foundation.eventure.Fragments;
 
 /**
  * Created by RawV on 6/4/2016.

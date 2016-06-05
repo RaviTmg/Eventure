@@ -16,30 +16,31 @@
         android:orientation="vertical">
 
 
-        <com.example.rawv.eventure.Widgets.AnimatImg
+        <com.soch.foundation.eventure.Widgets.AnimatImg
             android:id="@+id/img_sight_info"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             app:layout_collapseMode="parallax" />
 
         <LinearLayout
-            android:baselineAligned="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="1dp"
+            android:baselineAligned="false"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_marginRight="1dp"
                 android:layout_marginEnd="1dp"
+                android:layout_marginRight="1dp"
                 android:layout_weight="1"
                 android:background="#fff"
                 android:orientation="vertical"
                 android:padding="8dp">
 
                 <ImageView
+                    android:id="@+id/ic_bookmark"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -64,6 +65,7 @@
                 android:padding="8dp">
 
                 <ImageView
+                    android:id="@+id/ic_tip"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -88,6 +90,7 @@
                 android:padding="8dp">
 
                 <ImageView
+                    android:id="@+id/ic_rate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -129,7 +132,7 @@
             android:padding="@dimen/activity_vertical_margin">
 
             <TextView
-
+                android:id="@+id/tv_rating"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
                 android:background="@drawable/rounded_corner"
@@ -147,16 +150,13 @@
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
         </LinearLayout>
-        <!--
 
--->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:orientation="horizontal"
             android:paddingLeft="@dimen/activity_horizontal_margin">
-
 
 
             <TextView
@@ -168,9 +168,9 @@
         </LinearLayout>
 
         <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_comment"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/rv_comment"/>
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 

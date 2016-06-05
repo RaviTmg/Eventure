@@ -1,4 +1,4 @@
-package com.example.rawv.eventure.Activity;
+package com.soch.foundation.eventure.Activity;
 
 /**
  * Created by RawV on 6/4/2016.

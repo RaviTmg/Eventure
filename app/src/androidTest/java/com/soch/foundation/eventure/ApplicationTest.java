@@ -1,4 +1,4 @@
-package com.example.rawv.eventure;
+package com.soch.foundation.eventure;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

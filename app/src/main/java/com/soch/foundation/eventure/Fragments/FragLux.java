@@ -1,4 +1,4 @@
-package com.example.rawv.eventure.Fragments;
+package com.soch.foundation.eventure.Fragments;
 
 
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.rawv.eventure.R;
+import com.soch.foundation.eventure.R;
 
 
 public class FragLux extends Fragment {

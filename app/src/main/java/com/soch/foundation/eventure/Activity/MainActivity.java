@@ -1,4 +1,4 @@
-package com.example.rawv.eventure.Activity;
+package com.soch.foundation.eventure.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,24 +18,35 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.rawv.eventure.Fragments.FragAdven;
-import com.example.rawv.eventure.Fragments.FragLux;
-import com.example.rawv.eventure.Fragments.FragSight;
-import com.example.rawv.eventure.R;
-import com.example.rawv.eventure.Adapter.ViewPagerAdapter;
-
-import de.hdodenhof.circleimageview.CircleImageView;
+import com.soch.foundation.eventure.Fragments.FragAdven;
+import com.soch.foundation.eventure.Fragments.FragLux;
+import com.soch.foundation.eventure.Fragments.FragSight;
+import com.soch.foundation.eventure.R;
+import com.soch.foundation.eventure.Adapter.ViewPagerAdapter;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private TabLayout tabLayout;
     private ViewPager viewPager;
+    private boolean loggedin = false;
+    String username = null;
+    String email = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        if (savedInstanceState == null) {
+            Bundle bundle = getIntent().getExtras();
+            if (bundle == null) {
+            } else {
+                username = bundle.getString("Username");
+                email = bundle.getString("email");
+                loggedin = bundle.getBoolean("login");
+            }
+        }
+        if (!loggedin)
+            startActivity(new Intent(MainActivity.this, LoginActivity.class));
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -71,9 +82,12 @@ public class MainActivity extends AppCompatActivity
         assert navigationView != null;
         navigationView.setNavigationItemSelectedListener(this);
         View headerview = navigationView.getHeaderView(0);
-        TextView profilename = (TextView) headerview.findViewById(R.id.user_name);
-        profilename.setText("RawV");
-        profilename.setOnClickListener(new View.OnClickListener() {
+        TextView mprofilename = (TextView) headerview.findViewById(R.id.user_name);
+        TextView memail = (TextView) findViewById(R.id.header_email);
+
+        mprofilename.setText(username);
+       // memail.setText(email);
+        mprofilename.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startProfileActivity();
@@ -134,7 +148,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.nav_bookmarks:
                 Toast.makeText(MainActivity.this, "bookmarks", Toast.LENGTH_LONG).show();
                 break;

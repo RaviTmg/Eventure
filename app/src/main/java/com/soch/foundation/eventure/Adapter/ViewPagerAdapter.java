@@ -1,4 +1,4 @@
-package com.example.rawv.eventure.Adapter;
+package com.soch.foundation.eventure.Adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
